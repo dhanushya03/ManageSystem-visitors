@@ -1,0 +1,142 @@
+
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Unicorn Flat Management System</title>
+  </head>
+    <style>
+    body{margin:0;
+        background:repeating-linear-gradient(to right,#f17b41,#cd4bc9,purple);
+    }    
+    .welcome table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 70%;
+        margin:0;
+      }
+    .welcome  
+    {
+        margin-left:25%;
+        height:10px;
+        margin-top: 30px;
+    }
+      
+     .welcome td, th {
+        border: 1px solid black;
+        text-align: left;
+        padding: 8px;
+        background: rgb(238, 229, 229);
+      }
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 19.08%;
+  background-color: rgb(223, 220, 220);
+  position: fixed;
+  height: 100%;
+  overflow: auto;
+}
+h1{
+    margin-left: 25%;
+    color:darkred;
+}
+li a {
+  display: block;
+  color: #000;
+  padding: 25px 16px;
+  text-decoration: none;
+
+}
+.container
+{
+	background-color: #fff;
+	border-radius: 20px;
+  	box-shadow:20px 20px 50px rgb(86, 75, 75);
+	
+	margin: auto;
+	padding: 50px 10px;
+   
+
+}
+ a.active {
+  background-color: #9e33b6;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color:  #bf953b;
+  color: white;
+}
+.container p{
+	color:rgb(98, 43, 98);
+	text-align: left;
+	margin-left: 30px;
+	margin-bottom: -15px;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.container {
+	background-color: #fff;
+	border-radius: 20px;
+  	box-shadow:20px 20px 50px rgb(86, 75, 75);
+	width: 650px;
+	height: 300px;
+	margin: auto;
+	padding: 50px 20px;
+   
+}
+.container input {
+	background-color: #eee;
+	border: none;
+	padding: 15px 15px;
+	width: 85%;
+	margin: 23px 0 0 0;
+	margin-left: 30px;
+}
+.container input[type="submit"]
+{
+  font-size: 20px;
+  background: #cd4bc9;
+  color: rgb(59, 21, 59);
+  height: 55px;
+  font-weight:bolder;
+   border-radius: 10px;
+}
+
+.container h1{
+	text-align: center;
+	padding: 10px;
+	color:rgb(98, 43, 98);
+	margin: -20px;	
+	margin-bottom: 10px;
+}
+      
+    </style>
+ <body>
+  <img src=img/unicorn/unic.jpg>
+ <ul>
+   
+  <li><a  href="home.php">Home</a></li>
+  <li><a href="new.php">New Visitors</a></li>
+  <li><a href="visitorlist.php">Visitors List</a></li>
+  <li><a class="active" href="Profile.php">Profile</a></li>
+  <li><a href="logout.php">Logout</a></li>
+</ul> 
+      <div class="container">
+        <h1>Unicorn Visitor Management System</h1>
+         <form action="update.php" method="post">
+         <p> Admin Name</p><br>
+        <input type="text" name="username" placeholder="Enter Name" required /><br>
+           
+         <p>Phone No</p>
+        <input type="text"  name="phone" placeholder="Enter Phone no" required/><br>
+        <input type="submit" name="nupdate" value="Update"> 
+         
+       </form>
+       </div>
+       </body>
+</html>

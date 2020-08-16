@@ -1,0 +1,87 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <title>Unicorn Flat Management System</title>
+        <script lang="javascript" type="text/javascript">
+       window.history.forward();
+      </script>
+      </head>
+      <style>
+       body{
+    font-family: 'Poppins';
+    background:repeating-linear-gradient(to right,#f17b41,#cd4bc9,purple);
+    heigth:100%;
+    width:100%;
+	margin:0;
+	padding-top: 20px;
+	
+}
+h2{
+    color: rgb(138, 18, 138);
+    text-align: center;
+}
+input[type=text], input[type=subject] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  
+  resize: vertical;
+}
+
+input[type=submit] ,button{
+  background-color:rgb(98, 43, 98);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: rgb(98, 43, 98);
+}
+
+label {
+    margin: .4rem 0;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+  width: 850px;
+	height: 630px;
+	margin: auto;
+}
+      </style>
+    <body>
+        <div class="container">
+            <h2>Welcome To Unicorn Homes! - Please Enter Your Visit</h2>
+            <form action="Visitor.php" method="POST">
+    <label>Name</label>
+    <input type="text"  name="name" placeholder="Your name.." required/>
+
+    <label>FlatNo</label>
+    <input type="text" name="flat" placeholder="Enter Visiting FlatNo.." required/>
+
+    <label>Phone Number</label>
+    <input type="tel" name="phone" placeholder="Your Phone No.." required/>
+    <label>Date:</label>
+    <input type="date"  name="date"
+           value="2020-08-16"
+           min="2020-01-01" max="2020-12-31" required/><br><br>
+    <label >Address</label>
+    <input type="subject" name="subject" placeholder="Your address.." style="height: 200px;" required/>
+
+    <input name="submit" type="submit" value="Submit">
+    <button onclick="window.location.href='Visitor.php'">Not a Visitor</button>
+  </form>
+  
+  </div>
+  </body>
+</html>
